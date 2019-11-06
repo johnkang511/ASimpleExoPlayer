@@ -1,2 +1,7 @@
 include ':app'
 rootProject.name='My Application'
+
+def modulePrefix = ':'
+
+include modulePrefix + 'exoplayerLib'
+project(modulePrefix + 'exoplayerLib').projectDir = new File(rootDir, 'lib/ExoPlayer-1/library/core')
